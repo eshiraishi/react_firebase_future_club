@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 1 do Future Club</title>
+    <style>
+        body {
+            background-color: darkgray;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .container {
+            text-align: center;
+            width: 20%;
+            margin: 10% auto;
+            background-color: white;
+            padding: 2%;
+            border-radius: 2%;
+            border-style: solid;
+            border-width: 2px;
+            border-color: gray;
+        }
+        form input {
+            margin: 1%;
+        }
+        img {
+            height: 25%;
+            width: 25%;
+        }
+        
+    </style>
+</head>
+<body>
+    <script>
+        function displayValues() {
+            let username = document.getElementById('form-user').value
+            let password = document.getElementById('form-pwd').value
+            alert(`LOGIN:\nUsuário: ${username}\nSenha: ${password}\nSeu usuário e senha acabam de ser vazados. Fique mais atento aos sites que entra da próxima vez.`)
+        }
+    </script>
+    <div class="container">
+        <form>
+            <img src="logo_fc.png" alt="Future Club">
+            <h1>Atividade 1 do Future Club</h1>
+            <input type="text" placeholder="Usuário" id="form-user"><br>
+            <input type="password" placeholder="Senha" id="form-pwd"><br>
+            <input type="submit" value="Entrar" onclick="displayValues()">
+        </form>
+    </div>
+</body>
+</html>
