@@ -1,0 +1,109 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* body {
+  background: darkslategray;
+  max-height: 100vh;
+  position: relative;
+}
+
+.calculadora-container {
+  width: 6rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  background-color: red;
+} */
+
+.calculadora-container {
+  width: 6rem;
+  margin: 10rem;
+  background-color: khaki;
+  border: khaki solid 1rem;
+  border-left: khaki solid 1rem;
+  border-right: khaki solid 1rem;
+  box-shadow: 5px 5px 5px grey;
+}
+
+
+.calculadora-input, .calculadora-botao, .calculadora-output {
+  border: 0;
+  padding: 0;
+  margin: 0;
+  height: 3rem;
+  width: 3rem;
+  text-align: center;
+  font-family: 'Press Start 2P', cursive;
+}
+
+.calculadora-output {
+  background-color: darkolivegreen;
+  width: 6rem;
+  padding-top: 1rem;
+  box-sizing: border-box; /*  */
+}
+
+.calculadora-input {
+  background-color: darkolivegreen;
+  width: 6rem;
+}
+
+.calculadora-botao {
+  background-color: darkkhaki;
+}
+
+.label {
+  font-family: 'Press Start 2P', cursive;
+  font-size: 10pt;
+  height: 1rem;
+  margin: 0;
+  border-top: khaki solid 0.5rem;
+  border-bottom :khaki solid 0.5rem;
+}
+
+#no_2 {
+  border-bottom: khaki solid 1rem;
+}
+
+h1 {
+  margin: 5rem;
+  font-size: 15pt;
+  font-family: 'Press Start 2P', cursive;
+}
